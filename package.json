@@ -1,16 +1,22 @@
 {
 	"name": "@hoishin/editorconfig",
 	"version": "2.0.0",
+	"description": "Hoishin's .editorconfig",
 	"repository": "https://github.com/Hoishin/editorconfig",
-	"author": "Hoishin <hoishinxii@gmail.com>",
 	"license": "MIT",
-	"bin": {
-		"hoishin-editorconfig": "bin"
-	},
+	"author": "Hoishin <hoishinxii@gmail.com>",
 	"files": [
-		"editorconfig",
-		"bin"
+		"dist"
 	],
+	"bin": {
+		"hec": "dist/bin",
+		"hoishin-editorconfig": "dist/bin"
+	},
+	"scripts": {
+		"prebuild": "rm -rf dist && mkdir dist",
+		"build": "./scripts/build",
+		"prepublishOnly": "yarn build"
+	},
 	"publishConfig": {
 		"access": "public"
 	}
