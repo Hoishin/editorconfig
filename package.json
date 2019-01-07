@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"bin": "bin",
 	"files": [
-		".editorconfig",
+		"editorconfig",
 		"bin"
 	],
 	"publishConfig": {
