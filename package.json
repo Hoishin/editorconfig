@@ -4,7 +4,9 @@
 	"repository": "https://github.com/Hoishin/editorconfig",
 	"author": "Hoishin <hoishinxii@gmail.com>",
 	"license": "MIT",
-	"bin": "bin",
+	"bin": {
+		"hoishin-editorconfig": "bin"
+	},
 	"files": [
 		"editorconfig",
 		"bin"
