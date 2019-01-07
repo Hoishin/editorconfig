@@ -1,0 +1,2 @@
+# editorconfig
+Hoishin's editorconfig
