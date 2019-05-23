@@ -9,15 +9,25 @@
 		"dist"
 	],
 	"bin": {
-		"hec": "dist/bin",
-		"hoishin-editorconfig": "dist/bin"
+		"hec": "dist/bin.js",
+		"hoishin-editorconfig": "dist/bin.js"
 	},
 	"scripts": {
-		"prebuild": "rm -rf dist && mkdir dist",
-		"build": "./scripts/build",
+		"build": "del-cli dist && tsc && ts-node scripts/copy-editorconfig.ts",
 		"prepublishOnly": "yarn build"
 	},
 	"publishConfig": {
 		"access": "public"
+	},
+	"dependencies": {
+		"tslib": "^1.9.3"
+	},
+	"devDependencies": {
+		"@hoishin/tsconfig": "^1.0.0",
+		"@types/node": "10",
+		"del-cli": "^1.1.0",
+		"make-dir-cli": "^2.0.0",
+		"ts-node": "^8.1.0",
+		"typescript": "^3.4.5"
 	}
 }

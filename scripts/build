@@ -1,7 +1,0 @@
-#!/bin/bash
-
-EDITORCONFIG=$(cat .editorconfig)
-DEST_PATH="dist/bin"
-
-echo "#!/bin/bash" > ${DEST_PATH}
-echo "echo \"${EDITORCONFIG}\" > .editorconfig" >> ${DEST_PATH}
