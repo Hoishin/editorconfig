@@ -22,7 +22,7 @@
 	"prettier": "@hoishin/prettierrc",
 	"dependencies": {
 		"tslib": "1.10.0",
-		"update-notifier": "3.0.0"
+		"update-notifier": "3.0.1"
 	},
 	"devDependencies": {
 		"@hoishin/prettierrc": "2.1.1",
