@@ -69,10 +69,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.2.tgz#a5ccec6abb6060d5f20d256fb03ed743e9774999"
   integrity sha512-gojym4tX0FWeV2gsW4Xmzo5wxGjXGm550oVUII7f7G5o4BV6c7DBdiG1RRQd+y1bvqRyYtPfMK85UM95vsapqQ==
 
-"@types/node@10.14.18":
-  version "10.14.18"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.18.tgz#b7d45fc950e6ffd7edc685e890d13aa7b8535dce"
-  integrity sha512-ryO3Q3++yZC/+b8j8BdKd/dn9JlzlHBPdm80656xwYUdmPkpTGTjkAdt6BByiNupGPE8w0FhBgvYy/fX9hRNGQ==
+"@types/node@10.14.20":
+  version "10.14.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.20.tgz#c4378d9d6a62faa5c9aafffc3d726b5a1e7367c6"
+  integrity sha512-An+MXSV8CGXz/BO9C1KKsoJ/8WDrvlNUaRMsm2h+IHZuSyQkM8U5bJJkb8ItLKA73VePG/nUK+t+EuW2IWuhsQ==
 
 "@types/update-notifier@2.5.0":
   version "2.5.0"
