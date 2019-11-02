@@ -13,8 +13,8 @@
 		"hoishin-editorconfig": "dist/bin.js"
 	},
 	"scripts": {
-		"build": "del-cli dist && tsc && ts-node scripts/copy-editorconfig.ts",
-		"prepublishOnly": "yarn build"
+		"build": "del-cli dist && tsc && cpx .editorconfig dist/editorconfig",
+		"release": "run-s test build && standard-version"
 	},
 	"publishConfig": {
 		"access": "public"
@@ -29,8 +29,11 @@
 		"@hoishin/tsconfig": "2.0.0",
 		"@types/node": "10.17.3",
 		"@types/update-notifier": "2.5.0",
+		"cpx": "^1.5.0",
 		"del-cli": "3.0.0",
+		"npm-run-all": "^4.1.5",
 		"prettier": "1.18.2",
+		"standard-version": "^7.0.0",
 		"ts-node": "8.4.1",
 		"typescript": "3.6.4"
 	}
