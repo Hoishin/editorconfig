@@ -14,7 +14,7 @@
 	},
 	"scripts": {
 		"build": "del-cli dist && tsc && cpx .editorconfig dist/editorconfig",
-		"check-format": "prettier --check \"**/*.{ts,json,md}\"",
+		"check-format": "prettier --check \"**/*.{ts,json,md,yml}\"",
 		"lint": "eslint --ext .ts .",
 		"release": "run-s test build && standard-version",
 		"test": "run-s lint check-format"
@@ -30,7 +30,7 @@
 			"prettier --write",
 			"git add"
 		],
-		"*.{json,md}": [
+		"*.{json,md,yml}": [
 			"prettier --write",
 			"git add"
 		],
