@@ -47,7 +47,7 @@
 	},
 	"dependencies": {
 		"tslib": "1.10.0",
-		"update-notifier": "3.0.1"
+		"update-notifier": "4.1.0"
 	},
 	"devDependencies": {
 		"@hoishin/prettierrc": "2.1.1",
