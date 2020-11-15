@@ -50,7 +50,7 @@
 		"update-notifier": "4.1.0"
 	},
 	"devDependencies": {
-		"@hoishin/prettierrc": "2.1.1",
+		"@hoishin/prettierrc": "2.2.0",
 		"@hoishin/tsconfig": "2.0.0",
 		"@types/node": "10.17.18",
 		"@types/update-notifier": "4.1.0",
