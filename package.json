@@ -5,15 +5,15 @@
 	"repository": "https://github.com/Hoishin/editorconfig",
 	"license": "MIT",
 	"author": "Hoishin <hoishinxii@gmail.com>",
-	"files": [
-		"dist"
-	],
 	"bin": {
 		"hec": "dist/bin.js",
 		"hoishin-editorconfig": "dist/bin.js"
 	},
+	"files": [
+		"dist"
+	],
 	"scripts": {
-		"build": "del-cli dist && tsc && cpx .editorconfig dist/editorconfig",
+		"build": "del-cli dist && tsc && cpy .editorconfig dist --rename=editorconfig",
 		"check-format": "prettier --check \"**/*.{ts,json,md,yml}\"",
 		"lint": "eslint --ext .ts .",
 		"release": "run-s test build && standard-version",
@@ -46,15 +46,14 @@
 		]
 	},
 	"dependencies": {
-		"tslib": "2.0.3",
-		"update-notifier": "4.1.0"
+		"tslib": "2.0.3"
 	},
 	"devDependencies": {
 		"@hoishin/prettierrc": "2.2.0",
 		"@hoishin/tsconfig": "2.0.0",
 		"@types/node": "10.17.18",
 		"@types/update-notifier": "4.1.0",
-		"cpx": "1.5.0",
+		"cpy-cli": "3.1.1",
 		"del-cli": "3.0.0",
 		"eslint": "6.8.0",
 		"eslint-config-hoishin": "0.2.6",
