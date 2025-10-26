@@ -1,7 +1,0 @@
-{
-	"extends": "@hoishin/tsconfig",
-	"compilerOptions": {
-		"outDir": "dist"
-	},
-	"include": ["src/**/*.ts"]
-}
